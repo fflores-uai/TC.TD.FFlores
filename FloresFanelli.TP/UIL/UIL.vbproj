@@ -58,9 +58,17 @@
     <Folder Include="My Project\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Familia.vb" />
-    <Compile Include="Patente.vb" />
-    <Compile Include="Usuario.vb" />
+    <Compile Include="General\General.Designer.vb">
+      <DependentUpon>General.vb</DependentUpon>
+    </Compile>
+    <Compile Include="General\General.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
